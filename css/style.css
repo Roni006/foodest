@@ -238,48 +238,40 @@ img {
 .category-section{
     padding-top: 120px;
     padding-bottom: 120px;
+    /* background-color: #ddd; */
 }
 .category-section .category-title{
     max-width: 620px;
-    margin: 0 auto;
     text-align: center;
-
-}
-.gradient-text{
-    background-image: var(--primary-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin: 0 auto;
 }
 .category-section .category-row{
     display: flex;
     gap: 24px;
 }
 .category-item{
-    background-color: var(--white-color);
     box-shadow: var(--box-shadow);
+    background-color: var(--white-color);
     width: 16%;
     padding: 40px 24px;
     text-align: center;
     border-radius: 4px;
     transition: 0.3s;
     position: relative;
-    margin-top: 50px;
 }
-
 .category-section .category-item:hover{
     box-shadow: var(--hover-shadow);
 }
-.category-section .icon-wrapper{
+ .icon-wrapper{
     width: 74px;
     height: 74px;
     background-image: var(--icon-bg);
     display: inline-flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     border-radius: 50%;
     margin-bottom: 20px;
     position: relative;
-
 }
 .category-item .icon-wrapper .icon-white{
     left: 50%;
@@ -288,35 +280,35 @@ img {
     position: absolute;
     opacity: 0;
 }
+
 .category-item .explore-btn{
+    background-image: var(--primary-gradient);
     width: 35px;
     height: 35px;
-    background-image: var(--primary-gradient);
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
     color: var(--white-color);
     position: absolute;
     bottom: -19px;
     left: 50%;
-    transform: translatex(-50%);
+    transform: translate(-50%);
+    border-radius: 50%;
     opacity: 0;
     visibility: hidden;
     transition: 0.3s;
-    box-shadow: var(--primary-shadow);
 }
 .category-item:hover .explore-btn{
     opacity: 1;
     visibility: visible;
 }
 .category-item:hover .icon-wrapper{
-    background-image: var(--primary-gradient)
-}
-.category-item:hover .icon-wrapper .icon-color{
-    opacity: 0;
+    background-image: var(--primary-gradient);
 }
 .category-item:hover .icon-wrapper .icon-white{
     opacity: 1;
+}
+.category-item:hover .icon-wrapper .icon-color{
+    opacity: 0;
 }
 /* CATEGORY SECTION END */
