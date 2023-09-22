@@ -1,0 +1,322 @@
+/********************
+Tamplate Name: Foodest Html
+Author Name: Anik Islam
+Version: 1.0.0
+********************/
+
+/* root variables */
+:root {
+    --heading-color: #25292D;
+    --text-color: #666666;
+    --primary-gradient: linear-gradient(275.98deg, #FF6666 52.08%, #FFB23F 100%);
+    --heading-fonts: 'Lexend', sans-serif;
+    --body-fonts: 'Barlow', sans-serif;
+    --header-shadow: 4px 10px 40px rgba(146, 146, 146, 0.1);
+    --primary-color: #FF6666;
+    --section-gradient: linear-gradient(360deg, #FFF2F4 0.12%, #FFF2F4 65.05%, rgba(255, 252, 252, 0) 100%);
+    --white-color: #fff;
+    --shape-gradeint: linear-gradient(275.98deg, #F86161 0%, #FFB23F 100%);
+    --icon-bg: linear-gradient(275.98deg, rgba(248, 97, 97, 0.1) 0%, rgba(255, 178, 63, 0.1) 100%);
+    --box-shadow: 4px 10px 30px rgba(107, 107, 107, 0.05);
+    --hover-shadow:  10px 15px 40px rgba(152, 152, 152, 0.2);
+    --primary-shadow: -5px 0px 15px rgba(248, 97, 97, 0.3);
+
+}
+
+
+/* basic setup */
+body {
+    margin: 0;
+    font-size: 16px;
+    color: var(--text-color);
+    font-family: var(--body-fonts);
+}
+
+h1 {
+    font-size: 72px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--heading-color);
+    font-family: var(--heading-fonts);
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header-section {
+    background-color: #fff;
+}
+
+.header-section .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--header-shadow);
+    padding: 5px 25px 5px 15px;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu a {
+    color: var(--heading-color);
+    font-weight: 600;
+    padding: 5px 25px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.nav-menu a::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: calc(100% - 50px);
+    left: 50%;
+    transform: translatex(-50%);
+    bottom: 0;
+    background-image: var(--primary-gradient);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: var(--primary-color);
+}
+
+.nav-menu a:hover::before {
+    opacity: 1;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.tamplate-btn {
+    color: #fff;
+    font-weight: 600;
+    background-image: var(--primary-gradient);
+    padding: 16px 24px;
+    border-radius: 4px;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.mobile-menu-btn {
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    display: none;
+}
+
+
+/* hero-section start */
+.hero-section {
+    background-image: var(--section-gradient);
+    padding-top: 50px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.hero-section .hero-content {
+    display: flex;
+    gap: 50px;
+}
+
+.hero-left p {
+    max-width: 554px;
+}
+
+.gradient-text{
+    background-image: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-left {
+    width: 66%;
+    flex-shrink: 0;
+    align-self: center;
+}
+
+.hero-right {
+    width: 34%;
+}
+
+.btn-group {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.video-popup-btn {
+    color: var(--heading-color);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.btn-group .video-popup-btn .icon-wrapper{
+    height: 50px;
+    width: 50px;
+    background-image: var(--primary-gradient);
+    display: inline-flex;
+    border-radius: 50% ;
+    padding: 2px;
+    margin-right: 8px;
+    
+}
+.btn-group .video-popup-btn .icon-wrapper .bg-white{
+    background-color: var(--white-color);
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-right img{
+    max-width: initial;
+
+}
+.hero-right{
+    position: relative;
+    z-index: 1;
+
+}
+.triangle-shape{
+    width: 430px;
+    height: 430px;
+    background-image: var(--shape-gradeint);
+    display: inline-block;
+    border-radius: 30px 0px 30px 239px;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+/* CATEGORY SECTION START */
+.category-section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.category-section .category-title{
+    max-width: 620px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.gradient-text{
+    background-image: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.category-section .category-row{
+    display: flex;
+    gap: 24px;
+}
+.category-item{
+    background-color: var(--white-color);
+    box-shadow: var(--box-shadow);
+    width: 16%;
+    padding: 40px 24px;
+    text-align: center;
+    border-radius: 4px;
+    transition: 0.3s;
+    position: relative;
+    margin-top: 50px;
+}
+
+.category-section .category-item:hover{
+    box-shadow: var(--hover-shadow);
+}
+.category-section .icon-wrapper{
+    width: 74px;
+    height: 74px;
+    background-image: var(--icon-bg);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    position: relative;
+
+}
+.category-item .icon-wrapper .icon-white{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    opacity: 0;
+}
+.category-item .explore-btn{
+    width: 35px;
+    height: 35px;
+    background-image: var(--primary-gradient);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--white-color);
+    position: absolute;
+    bottom: -19px;
+    left: 50%;
+    transform: translatex(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    box-shadow: var(--primary-shadow);
+}
+.category-item:hover .explore-btn{
+    opacity: 1;
+    visibility: visible;
+}
+.category-item:hover .icon-wrapper{
+    background-image: var(--primary-gradient)
+}
+.category-item:hover .icon-wrapper .icon-color{
+    opacity: 0;
+}
+.category-item:hover .icon-wrapper .icon-white{
+    opacity: 1;
+}
+/* CATEGORY SECTION END */
