@@ -25,7 +25,14 @@
     .hero-right img {
         width: 100%;
     }
+    .category-row{
+        flex-wrap: wrap;
+    }
+    .category-item {
+        width: calc(33% - 62px) ;
+    }
 }
+
 @media(max-width: 900px){
     .hero-left {
         width: 100%;
@@ -52,6 +59,11 @@
         height: 240px;
     }
 }
+@media(max-width: 630px){
+    .category-item{
+        width: cacl(50% - 62px);
+    }
+}
 
 @media (max-width: 470px){
     .header-right .tamplate-btn{
@@ -68,5 +80,8 @@
     width: 336px;
     height: 336px;
     left: 50px;
+}
+.category-item{
+    width: 100%;
 }
 }

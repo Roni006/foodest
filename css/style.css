@@ -236,9 +236,14 @@ img {
 
 /* CATEGORY SECTION START */
 .category-section{
-    padding-top: 120px;
-    padding-bottom: 120px;
-    /* background-color: #ddd; */
+    padding-top: 120px 0;
+    /* padding-bottom: 120px; */
+    position: relative;
+}
+.category-section .shape-1{
+    position: absolute;
+    bottom: 40px;
+    left: 6%;
 }
 .category-section .category-title{
     max-width: 620px;
@@ -248,6 +253,7 @@ img {
 .category-section .category-row{
     display: flex;
     gap: 24px;
+    justify-content: center;
 }
 .category-item{
     box-shadow: var(--box-shadow);
@@ -258,6 +264,7 @@ img {
     border-radius: 4px;
     transition: 0.3s;
     position: relative;
+    margin-top: 50px;
 }
 .category-section .category-item:hover{
     box-shadow: var(--hover-shadow);
