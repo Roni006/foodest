@@ -8,6 +8,7 @@ Version: 1.0.0
 :root {
     --heading-color: #25292D;
     --text-color: #666666;
+    --subtitle-fonts: 'Lily Script One', cursive;
     --primary-gradient: linear-gradient(275.98deg, #FF6666 52.08%, #FFB23F 100%);
     --heading-fonts: 'Lexend', sans-serif;
     --body-fonts: 'Barlow', sans-serif;
@@ -20,7 +21,8 @@ Version: 1.0.0
     --box-shadow: 4px 10px 30px rgba(107, 107, 107, 0.05);
     --hover-shadow:  10px 15px 40px rgba(152, 152, 152, 0.2);
     --primary-shadow: -5px 0px 15px rgba(248, 97, 97, 0.3);
-
+    --box-shadow-2:  0px 10px 40px rgba(0, 0, 0, 0.05);
+    --box-hover-shadow-2: 0px 15px 40px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -66,6 +68,9 @@ a {
     text-decoration: none;
 }
 
+.mt-50{
+    margin-top: 50px;
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -236,8 +241,7 @@ img {
 
 /* CATEGORY SECTION START */
 .category-section{
-    padding-top: 120px 0;
-    /* padding-bottom: 120px; */
+    padding: 120px 0;
     position: relative;
 }
 .category-section .shape-1{
@@ -319,3 +323,72 @@ img {
     opacity: 0;
 }
 /* CATEGORY SECTION END */
+
+
+/* ABOUT SECTION START */
+.about-section{
+    padding-top: 120px;
+    position: relative;
+}
+.about-section .chicken{
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    z-index: -1;
+}
+.about-row{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    justify-content: space-between;
+}
+.about-row .about-left{
+    width: calc(50% - 30px);
+}
+.about-row .about-right{
+    width: 42%;
+}
+.about-subtitle{
+    background-image: linear-gradient(275.98deg, rgba(248, 97, 97, 0.1) 0%, rgba(255, 178, 63, 0.1) 100%);
+    display: inline-block;
+    padding: 4px 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.about-subtitle span{
+    font-size: 20px;
+    font-family: var(--subtitle-fonts);
+}
+.about-row .about-right p{
+    margin-top: 24px;
+}
+.about-horizontal-box{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: var(--box-shadow-2);
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-top: 25px ;
+    transition: 0.3s;
+}
+.about-horizontal-box:hover{
+    box-shadow: var(--box-hover-shadow-2);
+}
+.about-horizontal-box .icon-wrapper{
+    width: 25px;
+    height: 25px;
+    background-image: var(--primary-gradient);
+    color: var(--white-color);
+    flex-shrink: 0;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    font-size: 12px;
+    align-items: center;
+}
+.about-horizontal-box p{
+    margin:8px 0 0 !important;
+    font-size: 15px;
+}
+/* ABOUT SECTION END */
