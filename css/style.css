@@ -25,6 +25,10 @@ Version: 1.0.0
     --box-hover-shadow-2: 0px 15px 40px rgba(0, 0, 0, 0.1);
     --box-shadow-3: 0px 15px 50px rgba(0, 0, 0, 0.05);
     --primary-light-gradient: linear-gradient(275.98deg, rgba(248, 97, 97, 0.15) 0%, rgba(255, 178, 63, 0.15) 100%);
+    --section-bg: #FFF2F4;
+    --star-color: #FFB23F;
+    --btn-shadow: 5px 4px 15px rgba(248, 97, 97, 0.3);
+    --box-shadow-3: 5px 30px 60px rgba(248, 97, 97, 0.15);
 }
 
 
@@ -441,3 +445,85 @@ img {
     margin: 10px 0 0;
 }
 /* WCS SECTION END */
+
+
+/* MENU SECTION START */
+.menu-section{
+    background-color: var(--section-bg);
+    padding: 120px 0;
+}
+.menu-section-title{
+    text-align: center;
+    max-width: 590px;
+    margin: 0 auto;
+}
+.menu-card-row{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: center;
+}
+.menu-card {
+    background-color: var(--white-color);
+    border-radius: 10px;
+    padding: 26px 20px;
+    width: calc(25% - 65px);
+    transition: linear 0.3s;
+
+}
+.menu-card:hover{
+    box-shadow: var(--box-shadow-3);
+}
+.menu-card .product-img{
+    text-align: center;
+    margin-bottom: 23px;
+
+}
+.menu-card .product-img img{
+    filter: drop-shadow(0px 4px 20px rgba(248, 97, 97, 0.2));
+}
+.menu-card .meta-text{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    align-self: flex-end;
+}
+.menu-card .meta-text span{
+    margin-right: 15px;
+    color: var(--heading-color);
+    font-weight: 600;
+    
+}
+.menu-card .meta-text span i{
+    margin-right: 5px;
+}
+.menu-card .meta-text .star i{
+    color: var(--star-color);
+}
+.menu-card .card-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-card .card-bottom .card-pricing span del{
+    color: var(--heading-color);
+    margin-right: 10px;
+}
+.menu-card .card-bottom .card-pricing span{
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.card-bottom .card-pricing{
+    align-self: flex-end;
+}
+    
+
+.card-btn{
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    box-shadow: var(--btn-shadow);
+}
+/* MENU SECTION END */

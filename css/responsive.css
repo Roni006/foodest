@@ -43,6 +43,9 @@
     .break{
         display: none;
     }
+    .menu-card{
+        width: calc(33.33% - 60px);
+    }
 }
 
 @media(max-width: 900px){
@@ -68,7 +71,12 @@
     }
     .wcs-section .wcs-right{
         width: 100%;
-       
+    }
+    .menu-card-row{
+        gap: 15px;
+    }
+    .menu-card{
+        width: calc(50% - 60px);
     }
 }
 @media (max-width: 850px){
@@ -85,10 +93,15 @@
         width: 240px;
         height: 240px;
     }
+   
 }
 @media(max-width: 630px){
     .category-item{
         width: cacl(50% - 62px);
+    }
+    .menu-card{
+        width: 100%;
+        max-width: 300px;
     }
 }
 
@@ -114,5 +127,4 @@
 .wcs-left .wcs-horizontal-box{
     gap: 15px;
 }
-
 }
