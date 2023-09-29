@@ -93,6 +93,15 @@
         width: 240px;
         height: 240px;
     }
+    .offerd-row{
+        flex-wrap: wrap;
+    }
+    .offerd-row .offerd-details{
+        width: 100%;
+    }
+    .offerd-row .offerd-img{
+        width: 100%;
+    }
    
 }
 @media(max-width: 630px){
