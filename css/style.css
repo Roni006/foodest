@@ -29,6 +29,9 @@ Version: 1.0.0
     --star-color: #FFB23F;
     --btn-shadow: 5px 4px 15px rgba(248, 97, 97, 0.3);
     --box-shadow-3: 5px 30px 60px rgba(248, 97, 97, 0.15);
+    --team-shadow-1: 10px 10px 30px rgba(122, 122, 122, 0.1);
+    --team-bg-shadow: 5px 4px 15px rgba(248, 97, 97, 0.3);
+    --team-hover-shadow: 15px 15px 30px rgba(122,122,122, 0.2);
 }
 
 
@@ -550,13 +553,74 @@ img {
         gap: 50px;
         margin-bottom: 40px;
     }
-  
+    .timing-single{
+        font-family: var(--subtitle-fonts);
+    }
     .timing-single h2{
         font-weight: 500;
-        font-family: var(--subtitle-fonts);
     }
     .timing-single span{
         color: var(--primary-color);
-        font-family: var(--subtitle-fonts);
     }
 /* OFFERD SECTION END */
+
+/* <!-- TEAM-SECTION START --> */
+    .team-section{
+        padding: 90px 0;
+        
+    }
+     .team-row{
+        display: flex;
+        gap: 30px;
+        margin-top: 40px;
+        justify-content: center;
+
+    }
+    .team-single{
+        max-width: 25%;
+        background-color: var(--white-color);
+        box-shadow: var(--team-shadow-1);
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+        transition: 0.3s;
+        
+    }
+    .team-row .team-content{
+        position: absolute;
+        left: 0;
+        bottom: -60px;
+        padding: 12px 10px 20px 20px;
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 100%;
+        box-sizing: border-box;
+        border: 2px solid var(--white-color);
+        opacity: 0;
+        transition: 0.3s;
+
+    }
+    .team-row .team-content .explore-btn{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-image: var(--primary-gradient);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        right: 10px;
+        bottom: 10px;
+        color: var(--white-color);
+        box-shadow: var(--team-bg-shadow);
+        
+
+    }
+    .team-single:hover{
+        box-shadow: var(--team-hover-shadow);
+    }
+    .team-single:hover .team-content{
+        opacity: 1;
+        bottom: 0;
+
+    }
+/* <!-- TEAM-SECTION END --> */
