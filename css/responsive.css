@@ -55,6 +55,12 @@
     .team-single{
         width: calc(33% - 18px);
     }
+    .client-row{
+        flex-wrap: wrap;
+    }
+    .client-signle{
+        width: calc(50% - 20px);
+    }
 }
 
 @media(max-width: 900px){
@@ -111,6 +117,26 @@
     .offerd-row .offerd-img{
         width: 100%;
     }
+    .blog-row{
+        flex-wrap: wrap;
+
+    }
+    .blog-single-card {
+        width: 100%;
+    }
+    .blog-top-row .tamplate-btn{
+        display: none;
+    }
+    .mobile-btn{
+        display: block;
+    }
+    .blog-top-row{
+        justify-content: center; 
+    }
+    .blog-top-row .offerd-section-title{
+        text-align: center;
+    }
+   
    
 }
 
@@ -131,6 +157,12 @@
     .menu-card{
         width: 100%;
         max-width: 300px;
+    }
+    .client-row{
+        flex-wrap: wrap;
+    }
+    .client-signle{
+        width: 100%;
     }
     
 }
