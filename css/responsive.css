@@ -61,6 +61,10 @@
     .client-signle{
         width: calc(50% - 20px);
     }
+    .shapes-1,
+    .shapes-2{
+        display: none;
+    }
 }
 
 @media(max-width: 900px){
@@ -147,6 +151,10 @@
     .team-single{
         width: calc(50% - 30px);
     }
+    .footer-menu{
+        gap: 12px;
+    }
+   
 }
 
 
